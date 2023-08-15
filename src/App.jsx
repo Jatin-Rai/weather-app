@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div
-      className={`${darkMode ? "day" : "night"} transition-all duration-300`}
+      className={`${darkMode ? "night" : "day"} transition-all duration-300`}
     >
       <header className="flex  justify-between px-20 pt-5">
         <h2 className="text-4xl text-white">Weather</h2>
