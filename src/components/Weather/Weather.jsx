@@ -28,7 +28,7 @@ const Weather = ({
     <div className="w-full mt-16 lg:mt-30 lg:px-30 justify-center container mx-auto">
       <div className="flex flex-wrap w-full lg:w-auto">
         <div className="w-full lg:w-1/2 flex rounded-lg bg-auto">
-          <div className="rounded-lg py-6 pl-8 pr-32 w-full bg-gray-800 bg-opacity-20 shadow text-white">
+          <div className="rounded-lg py-6 pl-8 pr-32 w-full bg-white bg-opacity-20 shadow text-white">
             <div className="mb-10">
               <h2 className="font-bold text-3xl leading-none pb-1">
                 {dayName}
@@ -52,7 +52,9 @@ const Weather = ({
                 </strong>
                 <p className="text-xl font-mono">{weather.toUpperCase()}</p>
               </div>
-              <div className="flex items-end p-2 font-semibold">Feels like {Math.round(feels_like)}ºC</div>
+              <div className="flex items-end p-2 font-semibold">
+                Feels like {Math.round(feels_like)}ºC
+              </div>
             </div>
           </div>
         </div>
@@ -72,7 +74,7 @@ const Weather = ({
               <div className="w-auto text-right">{wind} Mph</div>
             </div>
             <div className="flex flex-row gap-4">
-              <div className="flex flex-col w-1/4 bg-gray-100 bg-opacity-20 rounded-lg pb-2">
+              <div className="flex flex-col w-1/4 bg-gray-100 bg-opacity-30 rounded-lg pb-2">
                 <div className="text-center p-4">
                   <div className="flex justify-center">
                     <FaTemperatureArrowUp className="text-4xl text-red-600" />
@@ -86,7 +88,7 @@ const Weather = ({
                 </div>
               </div>
 
-              <div className="flex flex-col w-1/4 bg-gray-100 bg-opacity-20 rounded-lg pb-2">
+              <div className="flex flex-col w-1/4 bg-gray-100 bg-opacity-30 rounded-lg pb-2">
                 <div className="text-center p-4">
                   <div className="flex justify-center">
                     <FaTemperatureArrowDown className="text-4xl text-green-600" />
@@ -100,7 +102,7 @@ const Weather = ({
                 </div>
               </div>
 
-              <div className="flex flex-col w-1/4 bg-gray-100 bg-opacity-20 rounded-lg pb-2">
+              <div className="flex flex-col w-1/4 bg-gray-100 bg-opacity-30 rounded-lg pb-2">
                 <div className="text-center p-2">
                   <div className="flex justify-center">
                     <WiSunrise className="text-6xl text-yellow-500" />
@@ -114,7 +116,7 @@ const Weather = ({
                 </div>
               </div>
 
-              <div className="flex flex-col w-1/4 bg-gray-100 bg-opacity-20 rounded-lg pb-2">
+              <div className="flex flex-col w-1/4 bg-gray-100 bg-opacity-30 rounded-lg pb-2">
                 <div className="text-center p-2">
                   <div className="flex justify-center">
                     <WiSunset className="text-6xl text-purple-600" />

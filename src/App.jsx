@@ -28,7 +28,7 @@ function App() {
         ) : (
           <div className="group cursor-pointer" onClick={handleDarkModeToggle}>
             <HiSun className="text-4xl text-yellow-400 transition-all duration-300" />
-            <span className="p-4 rounded-md text-yellow-400 absolute top-12 right-10 hidden group-hover:block">
+            <span className="p-4 rounded-md text-yellow-600 absolute top-12 right-10 hidden group-hover:block">
               Light Mode
             </span>
           </div>
