@@ -52,7 +52,7 @@ const Weather = ({
                 </strong>
                 <p className="text-xl font-mono">{weather.toUpperCase()}</p>
               </div>
-              <div className="flex items-end p-2">Feels like {Math.round(feels_like)}ºC</div>
+              <div className="flex items-end p-2 font-semibold">Feels like {Math.round(feels_like)}ºC</div>
             </div>
           </div>
         </div>
