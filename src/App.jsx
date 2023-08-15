@@ -19,13 +19,13 @@ function App() {
       <header className="flex  justify-between px-20 pt-5">
         <h2 className="text-4xl text-white">Weather</h2>
         {darkMode ? (
-          <HiSun
-            className="text-4xl text-yellow-500 cursor-pointer transition-all duration-300"
+          <HiMoon
+            className="text-4xl text-gray-300 cursor-pointer transition-all duration-300"
             onClick={handleDarkModeToggle}
           />
         ) : (
-          <HiMoon
-            className="text-4xl text-gray-300 cursor-pointer transition-all duration-300"
+          <HiSun
+            className="text-4xl text-yellow-500 cursor-pointer transition-all duration-300"
             onClick={handleDarkModeToggle}
           />
         )}
