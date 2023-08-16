@@ -6,6 +6,7 @@ import Loading from "../Loading/Loading";
 import Weather from "../Weather/Weather";
 
 const Search = () => {
+  console.log("search rendered");
   const [city, setCity] = useState("");
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector((state) => state.weather);
@@ -19,14 +20,14 @@ const Search = () => {
 
   return (
     <div>
-      <div className="relative text-center mt-5">
+      <div className="text-center mt-5">
         <input
           type="text"
           placeholder="Enter Location"
           value={city}
           onChange={(event) => setCity(event.target.value)}
           onKeyDown={handleSubmit}
-          className="p-3 pl-5 rounded-full bg-gray-800 bg-opacity-50 text-white focus:outline-none focus:scale-110 transition-all duration-300 placeholder:text-white"
+          className="p-3 rounded-full bg-gray-800 bg-opacity-50 text-white focus:outline-none focus:scale-110 transition-all duration-300 placeholder:text-white w-2/3 sm:w-2/5"
         />
       </div>
       {loading && <Loading />}

@@ -8,18 +8,16 @@
   box-sizing: border-box;
 }
 
-body .day {
+.day {
   background: url(./assets/background_day.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
 }
 
-body .night {
+.night {
   background: url(./assets/background_night.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
 }
