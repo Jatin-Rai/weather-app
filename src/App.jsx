@@ -5,7 +5,6 @@ import "./index.css";
 import Header from "./components/Header/Header";
 
 function App() {
-  console.log("app.js rendered");
   const [darkMode, setDarkMode] = useState(false);
 
   const handleDarkModeToggle = () => {

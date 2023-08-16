@@ -23,7 +23,6 @@ const Weather = ({
   sunset,
   icon,
 }) => {
-  console.log("Weather rendered");
   const { dayName, date } = currentDate();
 
   return (

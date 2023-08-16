@@ -6,7 +6,6 @@ import Loading from "../Loading/Loading";
 import Weather from "../Weather/Weather";
 
 const Search = () => {
-  console.log("search rendered");
   const [city, setCity] = useState("");
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector((state) => state.weather);
