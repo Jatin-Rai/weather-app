@@ -10,14 +10,14 @@ const Header = ({ darkMode, handleDarkModeToggle }) => {
         {darkMode ? (
           <>
             <HiMoon className="text-gray-300 text-3xl transition-all duration-300 group-hover:scale-100" />
-            <span className="p-2 text-white absolute top-10 right-5 hidden group-hover:block">
+            <span className="p-2 text-white absolute top-8 right-5 hidden group-hover:block">
               Dark Mode
             </span>
           </>
         ) : (
           <>
             <HiSun className="text-yellow-400 text-3xl transition-all duration-300" />
-            <span className="p-2 text-yellow-600 absolute top-10 right-5 hidden group-hover:block">
+            <span className="p-2 text-yellow-600 absolute top-8 right-5 hidden group-hover:block">
               Light Mode
             </span>
           </>
